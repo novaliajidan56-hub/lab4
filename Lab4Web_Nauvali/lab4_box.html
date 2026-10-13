@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Element - Praktikum 4</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; font-family: Arial, sans-serif; color: #333; }
+    header { margin-bottom: 22px; }
+    .boxes { display: flow-root; }
+    .box { float: left; padding: 18px 24px; margin-right: 8px; color: #111; }
+    .div1 { background: #ef4444; }
+    .div2 { background: #facc15; }
+    .div3 { background: #22c55e; }
+    .div4 { background: #3b82f6; color: white; clear: left; float: none; width: fit-content; margin-top: 8px; }
+    .note { margin-top: 24px; color: #666; }
+  </style>
+</head>
+<body>
+  <header><h1>Box Element</h1><p>Praktikum 4 — CSS Layout</p></header>
+  <section class="boxes">
+    <div class="box div1">Div 1</div>
+    <div class="box div2">Div 2</div>
+    <div class="box div3">Div 3</div>
+    <div class="box div4">Div 4 — clear: left</div>
+  </section>
+  <p class="note">Contoh penggunaan box element, float, dan clear.</p>
+</body>
+</html>

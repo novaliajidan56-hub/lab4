@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Sederhana | Lab4Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <header class="site-header"><h1>Layout Sederhana</h1><p>Praktikum Pemrograman Web — CSS Layout</p></header>
+  <nav>
+    <a class="active" href="home.html">Home</a>
+    <a href="#artikel">Artikel</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+  <section id="hero">
+    <h2>Hello World!</h2>
+    <p>Selamat datang di halaman latihan CSS Layout. Halaman ini menerapkan elemen semantik HTML5, navigasi, hero panel, konten utama, sidebar, dan footer.</p>
+    <a class="btn btn-large" href="#artikel">Learn more »</a>
+  </section>
+  <div id="wrapper" class="clearfix">
+    <main id="main">
+      <section class="row">
+        <div class="box">
+          <img src="https://dummyimage.com/120/db7d25/fff.png&text=Web" alt="Ilustrasi web">
+          <h3>Web Design</h3>
+          <p>Menyusun tampilan halaman agar rapi, jelas, dan mudah digunakan.</p>
+          <a href="about.html" class="btn btn-default">View detail</a>
+        </div>
+        <div class="box">
+          <img src="https://dummyimage.com/120/3e73e6/fff.png&text=Code" alt="Ilustrasi kode">
+          <h3>HTML & CSS</h3>
+          <p>Menggunakan struktur HTML dan aturan CSS untuk membuat layout.</p>
+          <a href="about.html" class="btn btn-default">View detail</a>
+        </div>
+        <div class="box">
+          <img src="https://dummyimage.com/120/319875/fff.png&text=UI" alt="Ilustrasi UI">
+          <h3>User Interface</h3>
+          <p>Membuat komponen antarmuka konsisten dan nyaman dibaca.</p>
+          <a href="contact.html" class="btn btn-default">Hubungi</a>
+        </div>
+      </section>
+      <hr class="divider">
+      <article id="artikel" class="entry">
+        <h2>Memahami CSS Layout</h2>
+        <img src="https://dummyimage.com/150/7b8a70/fff.png&text=CSS" alt="Ilustrasi CSS">
+        <p>CSS layout mengatur posisi dan ukuran elemen pada halaman web. Pada latihan ini digunakan float untuk menyusun kolom, clear untuk menghentikan efek float, serta box model untuk mengatur margin, border, padding, dan content.</p>
+      </article>
+      <hr class="divider">
+      <article class="entry">
+        <h2>HTML Semantik</h2>
+        <img class="right-img" src="https://dummyimage.com/150/496b9b/fff.png&text=HTML" alt="Ilustrasi HTML">
+        <p>Elemen seperti header, nav, main, section, article, aside, dan footer membantu memberi makna pada bagian halaman. Struktur semantik membuat dokumen lebih terorganisasi dan mudah dipahami.</p>
+      </article>
+    </main>
+    <aside id="sidebar">
+      <div class="widget-box">
+        <h3 class="title">Widget Header</h3>
+        <ul>
+          <li><a href="#artikel">Pengenalan CSS</a></li>
+          <li><a href="#artikel">Box Element</a></li>
+          <li><a href="#artikel">Float Property</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="widget-box">
+        <h3 class="title">Widget Text</h3>
+        <p>Contoh sidebar berisi tautan dan informasi pendukung. Lebar dan posisi sidebar diatur menggunakan CSS.</p>
+      </div>
+    </aside>
+  </div>
+  <footer><p>© 2026 — Nauvali Ajidan Pratama Putra | I252A</p></footer>
+</div>
+</body>
+</html>

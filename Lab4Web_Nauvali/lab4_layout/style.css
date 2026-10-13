@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Reset dan dasar */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { line-height: 1.55; font-size: 100%; font-family: 'Open Sans', Arial, sans-serif; color: #5a5a5a; background: #f4f6f8; }
+#container { width: min(980px, 94%); margin: 24px auto; background: #fff; box-shadow: 0 0 1em #d7dce1; }
+.site-header { padding: 24px 20px; }
+.site-header h1 { margin: 8px 0; color: #777; font-size: 30px; }
+.site-header p { color: #888; }
+
+/* Navigasi */
+nav { display: block; background: #1f5faa; }
+nav a { padding: 14px 24px; display: inline-block; color: #fff; font-size: 14px; text-decoration: none; font-weight: 700; }
+nav a.active, nav a:hover { background: #2b83ea; }
+
+/* Hero panel */
+#hero { background: #e4e8ed; padding: 34px 24px; margin-bottom: 20px; }
+#hero h2 { margin-bottom: 12px; font-size: 30px; color: #333; }
+#hero p { margin-bottom: 18px; font-size: 15px; line-height: 1.7; max-width: 760px; }
+.btn { display: inline-block; text-decoration: none; border-radius: 3px; font-weight: 700; }
+.btn-large { background: #337ab7; color: #fff; padding: 10px 16px; }
+.btn-default { border: 1px solid #ccc; color: #444; padding: 7px 12px; font-size: 13px; }
+.btn:hover { opacity: .85; }
+
+/* Konten utama dan sidebar */
+#wrapper { padding: 0 20px 24px; }
+#main { float: left; width: 68%; padding: 10px 16px 10px 0; }
+#sidebar { float: right; width: 30%; padding: 10px 0 10px 10px; }
+.clearfix::after, .row::after, .entry::after { content: ''; display: table; clear: both; }
+
+/* Tiga kolom konten */
+.row { margin: 0 -8px; }
+.box { float: left; width: 33.333%; padding: 0 8px; text-align: center; }
+.box img { width: 100px; height: 100px; object-fit: cover; border: 0; vertical-align: middle; border-radius: 50%; }
+.box h3 { margin: 12px 0; color: #333; }
+.box p { line-height: 1.6; font-size: 13px; margin-bottom: 14px; }
+.divider { border: 0; border-top: 1px solid #e8e8e8; margin: 32px 0; }
+
+/* Artikel */
+.entry { margin: 15px 0; }
+.entry h2 { margin-bottom: 14px; color: #333; font-size: 22px; }
+.entry p { line-height: 1.8; }
+.entry img { width: 120px; height: 120px; object-fit: cover; float: left; border-radius: 5px; margin: 0 15px 10px 0; }
+.entry .right-img { float: right; margin: 0 0 10px 15px; }
+
+/* Widget sidebar */
+.widget-box { border: 1px solid #eee; margin-bottom: 20px; }
+.widget-box .title { padding: 10px 14px; background: #428bca; color: #fff; font-size: 16px; }
+.widget-box ul { list-style: none; }
+.widget-box li { border-bottom: 1px solid #eee; }
+.widget-box li a { padding: 9px 14px; color: #333; display: block; text-decoration: none; }
+.widget-box li:hover a { background: #f0f3f5; }
+.widget-box p { padding: 14px; line-height: 1.7; font-size: 14px; }
+
+/* Halaman About dan Kontak */
+.page-content { padding: 10px 28px 32px; min-height: 250px; }
+.content-card { padding: 20px; border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 18px; }
+.content-card h2 { margin-bottom: 12px; color: #333; }
+.content-card ul { padding-left: 22px; }
+.contact-form { max-width: 620px; }
+.contact-form label { display: block; margin: 14px 0 6px; font-weight: 700; color: #333; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 11px; border: 1px solid #ccd2d8; border-radius: 4px; font: inherit; }
+.contact-form textarea { resize: vertical; }
+.contact-form button { margin-top: 16px; border: 0; background: #1f5faa; color: white; padding: 11px 18px; border-radius: 4px; font-weight: 700; cursor: pointer; }
+.form-note { margin-top: 12px; font-size: 12px; color: #777; }
+
+/* Footer */
+footer { clear: both; background: #1d1d1d; padding: 18px 20px; color: #eee; font-size: 13px; }
+
+@media (max-width: 700px) {
+  #container { width: 100%; margin: 0 auto; }
+  nav a { padding: 12px 14px; }
+  #main, #sidebar { float: none; width: 100%; padding: 12px 0; }
+  #wrapper { padding: 0 16px 20px; }
+  .box { width: 100%; margin-bottom: 24px; }
+  .entry img, .entry .right-img { float: none; display: block; margin: 0 0 12px; }
+}
